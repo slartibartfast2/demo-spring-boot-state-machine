@@ -1,0 +1,15 @@
+spring:
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: create-drop
+
+logging:
+  level:
+    org.hibernate: ERROR
+    org.hibernate.stat: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
